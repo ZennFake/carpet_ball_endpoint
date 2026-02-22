@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://18slvjfd44vg"]
+
+[ext_resource type="Script" uid="uid://cuk5ft5wl78t" path="res://Scenes/Master/Scripts/master.gd" id="1_7pgt6"]
+[ext_resource type="PackedScene" uid="uid://blwasj7nve8rh" path="res://Objects/LoadingScreen/LoadingScreen.tscn" id="2_1cxoe"]
+[ext_resource type="PackedScene" uid="uid://dxosx2bcatk0y" path="res://Scenes/Login/login.tscn" id="2_ivleu"]
+[ext_resource type="Script" uid="uid://jocrcfdw6q5x" path="res://Scenes/Networking/networking.gd" id="4_ivleu"]
+
+[node name="Master" type="Node2D" unique_id=947149296]
+script = ExtResource("1_7pgt6")
+metadata/SessionId = ""
+metadata/UserId = ""
+
+[node name="Login" parent="." unique_id=1406755796 instance=ExtResource("2_ivleu")]
+
+[node name="LoadingScreen" parent="." unique_id=129303301 instance=ExtResource("2_1cxoe")]
+z_index = 100
+
+[node name="Networking" type="Node2D" parent="." unique_id=1366007352]
+script = ExtResource("4_ivleu")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="Networking" unique_id=1317639122]
+use_threads = true
+timeout = 10.0
