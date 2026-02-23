@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1771818219|2143948169';
+const CACHE_VERSION = '1771819174|3098762485';
 /** @type {string} */
 const CACHE_PREFIX = 'Carpet Ball-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
